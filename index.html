@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="render(),  generateBasketHTML()">
+    <header>
+        <div class="logo"> <img src="icons/besteck.png" alt="" width="60px"><span class="title"
+                style="padding-left: 10px;"> LieferanGo</span></div>
+        <p>Speisekarte</p>
+        <div class="lang-menu"><img src="icons/germany.png" alt=""><img src="icons/menu.png" alt="" width="40px"
+                style="padding-left: 10px; cursor: pointer;"></div>
+    </header>
+    <div class="menu">
+        <div><img src="img/pizza.jpg" alt="" class="haupt-img"><img src="img/pizza-log.jpg" alt="" class="rest-img">
+        </div>
+        <div class="reviews">
+
+            <div class="reviews-titel">
+                <h1>Restaurant Name</h1>
+                <div style="cursor: pointer;"><img src="icons/info.png" alt="" width="30px"
+                        style="padding-right: 16px;"> <img src="icons/liebe.png" alt="" width="30px"></div>
+            </div>
+            <div>
+                <ul>
+                    <li><img src="icons/uhr.png" alt="" width="20px">
+                        <p>Lieferung in 30-55 min
+                        </p>
+                    </li>
+                    <li><img src="icons/motorrad.png" alt="" width="20px">
+                        <p>1,00 €
+                        </p>
+                    </li>
+                    <li><img src="icons/warenkorb.png" alt="" width="20px">
+                        <p>Min. 15,00 €
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <img class="content-img" src="img/pizza.jpg">
+            <span class="speise">Pizza</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non maxime, ea, quaerat dolorum rem et velit,
+                laudantium ducimus accusamus ratione totam? Accusantium voluptatem repellat voluptatibus accusamus dicta
+                distinctio nostrum? Similique!</p>
+            <div id="pizza"></div>
+            <img class="content-img" src="img/salmon.jpg">
+            <span class="speise">Pasta</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non maxime, ea, quaerat dolorum rem et velit,
+                laudantium ducimus accusamus ratione totam? Accusantium voluptatem repellat voluptatibus accusamus dicta
+                distinctio nostrum? Similique!</p>
+            <div id="pasta"></div>
+            <img class="content-img" src="img/salmon.jpg">
+            <span class="speise">Salate</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non maxime, ea, quaerat dolorum rem et velit,
+                laudantium ducimus accusamus ratione totam? Accusantium voluptatem repellat voluptatibus accusamus dicta
+                distinctio nostrum? Similique!</p>
+            <div id="salat"></div>
+            <img class="content-img" src="img/tiramisu.jpg">
+            <span class="speise">Desserts</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non maxime, ea, quaerat dolorum rem et velit,
+                laudantium ducimus accusamus ratione totam? Accusantium voluptatem repellat voluptatibus accusamus dicta
+                distinctio nostrum? Similique!</p>
+            <div id="dessert"></div>
+        </div>
+    </div>
+    <div class="basket">
+        <h1>Warenkorb</h1>
+        <div id="basket" class="basket-container">
+
+        </div>
+    </div>
+</body>
+
+</html>
